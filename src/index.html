@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style/main.min.css" />
+
+		<title>sign-up</title>
+	</head>
+	<body>
+		<section id="registration">
+			<div class="container">
+				<div class="sign-up">
+					<div class="sign-up__title">
+						<h2>sign up</h2>
+					</div>
+					<form class="sign-up__form">
+						<div class="sign-up__form--title">
+							<h3>new user?</h3>
+							<span>use the form below to create your account.</span>
+						</div>
+						<div class="sign-up__form--inputs">
+							<div class="input">
+								<label for="first-name">first name</label>
+								<input type="text" id="first-name" />
+								<div class="error"></div>
+							</div>
+							<div class="input">
+								<label for="last-name">last name</label>
+								<input type="text" id="last-name" />
+								<div class="error"></div>
+							</div>
+							<div>
+								<label>nationality</label>
+								<div class="select">
+									<select>
+										<option>American</option>
+										<option>Russian</option>
+										<option>Belarus</option>
+										<option>Spanish</option>
+									</select>
+								</div>
+							</div>
+							<div class="input">
+								<label for="e-mail">e-mail</label>
+								<div class="email">
+									<input type="email" id="e-mail" />
+									<div class="error"></div>
+								</div>
+							</div>
+							<div>
+								<label>date of birth</label>
+								<div class="birth">
+									<div class="birth__date">
+										<select>
+											<option>21</option>
+											<option>22</option>
+											<option>23</option>
+											<option>24</option>
+										</select>
+									</div>
+									<div class="birth__month">
+										<select>
+											<option>December</option>
+											<option>November</option>
+											<option>October</option>
+											<option>September</option>
+										</select>
+									</div>
+									<div class="birth__year">
+										<select>
+											<option>1995</option>
+											<option>1996</option>
+											<option>1997</option>
+											<option>1998</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="sign-up__form__gender">
+								<label>gender</label>
+								<div class="gender">
+									<div class="gender__male">
+										<input type="radio" id="male" name="gender" value="male" />
+										<label for="male">male</label>
+									</div>
+									<div class="gender__female">
+										<input
+											type="radio"
+											id="female"
+											name="gender"
+											value="female"
+										/>
+										<label for="female">female</label>
+									</div>
+								</div>
+								<div class="error"></div>
+							</div>
+							<div class="input">
+								<label for="password">password</label>
+								<input type="password" id="password" />
+								<div class="error"></div>
+							</div>
+							<div class="input">
+								<label for="confirm">confirm password</label>
+								<input type="password" id="confirm" />
+								<div class="error"></div>
+							</div>
+						</div>
+						<div class="sign-up__form--buttons">
+							<div class="sign-up__form--link">
+								<span>have an account? <a href="#">login</a></span>
+							</div>
+							<button class="sign-up__form--submit">complete signup</button>
+						</div>
+						<object
+							id="account-icon"
+							type="image/svg+xml"
+							data="./image/account.svg"
+						></object>
+					</form>
+					<div class="popup">
+						<h3 class="popup__title">thank you!</h3>
+						<div class="popup__info">
+							<span>you registered!</span>
+						</div>
+						<button class="popup__close">ok</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script>
+		<!-- <script src="./js/vivus.js"></script> -->
+		<script type="module" src="./js/main.min.js"></script>
+	</body>
+</html>

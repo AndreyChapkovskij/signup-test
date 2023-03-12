@@ -1,0 +1,45 @@
+@import url(../style/import.css);
+@import url(../style/signup.css);
+@import url(../style/popup.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-size: 16px;
+  font-family: 'Work Sans', 'PT Sans', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  z-index: 0;
+  position: relative;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+span::first-letter,
+label::first-letter,
+a::first-letter,
+h2::first-letter,
+h3::first-letter,
+.error::first-letter {
+  text-transform: uppercase;
+}
+
+.error {
+  color: red;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  font-size: 12px;
+  line-height: 14px;
+}
